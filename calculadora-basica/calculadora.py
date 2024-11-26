@@ -1,9 +1,20 @@
+'''
+--------------- CALCULADORA --------------- 
+
+Implementar um script que realize as 4 operações básicas, potência e raiz quadrada.
+
+-------------------------------------------
+
+'''
+# Importando bibliotecas 
 import os
 import time
 
+# Função para limpeza de tela do terminal
 def limpar_tela():
     os.system('cls')
 
+# Função de soma
 def soma():
     num1 = float(input("Insira o primeiro número: "))
     num2 = float(input("Insira o segundo número: "))
@@ -14,6 +25,7 @@ def soma():
     resultado = num1 + num2
     print("{} + {} = {}".format(num1, num2, resultado))
 
+# Função de subtração
 def subtracao():
     num1 = float(input("Insira o primeiro número: "))
     num2 = float(input("Insira o segundo número: "))
@@ -24,6 +36,7 @@ def subtracao():
     resultado = num1 - num2
     print("{} - {} = {}".format(num1, num2, resultado))
 
+# Função de multiplicação
 def produto():
     num1 = float(input("Insira o primeiro número: "))
     num2 = float(input("Insira o segundo número: "))
@@ -34,6 +47,7 @@ def produto():
     resultado = num1 * num2
     print("{} x {} = {}".format(num1, num2, resultado))
 
+# Função de divisão
 def divisao():
     num1 = float(input("Insira o dividendo: "))
     num2 = float(input("Insira o divisor: "))
@@ -45,6 +59,7 @@ def divisao():
     resto = num1 % num2
     print("{}/{} = {:.3f}, e o resto da divisão é {:.0f}".format(num1, num2, resultado, resto))
 
+# Função de exponenciação
 def potencia():
     num1 = float(input("Insira a base: "))
     num2 = float(input("Insira o expoente: "))
@@ -55,6 +70,7 @@ def potencia():
     resultado = num1 ** num2
     print("{}^{} = {}".format(num1, num2, resultado))
 
+# Função de radiciação (raiz quadrada apenas)
 def raiz_quadrada():
     num1 = float(input("Insira o número: "))
     print("Calculando...")
@@ -64,6 +80,7 @@ def raiz_quadrada():
     resultado = num1 ** (0.5)
     print("Raiz quadrada de {} = {:.3f}".format(num1, resultado))
 
+# Controla se o programa deve continuar no loop de funcionamento ou encerrar a operação 
 calculadora_ON = True
 
 while calculadora_ON:
